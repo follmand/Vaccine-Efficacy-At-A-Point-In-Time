@@ -4,7 +4,7 @@
 ## The numbers of volunteers who were PCR+ on day 29 are compared.
 ##
 ##
-
+set.seed(1234)
 Y<-c(rep(0,14134-14),rep(1,14),rep(0,14073-38),rep(1,38))
 Z<-c(rep(1,14134),rep(0,14073))
 VEPI<-1-(sum(Y*Z)/sum(Z))/(sum(Y*(1-Z))/sum(1-Z))
